@@ -3,7 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
-const errorModule =require('./api/services/error/errorHandling');
+const errorModule =require('./services/error/errorHandling');
 
 mongoose.connect(`mongodb+srv://dbAdmin:${process.env.MONGO_ATLAS_PW}@cluster0.viz7txe.mongodb.net/?retryWrites=true&w=majority`)
 	.then(() => console.log('MongoDB Connected'))
@@ -25,9 +25,9 @@ app.use((req, res, next)=>{
 	next();
 });
 
-const userRoutes = require('./api/routes/users');
-const noteRoutes = require('./api/routes/notes');
-const labelRoutes = require('./api/routes/labels');
+const userRoutes = require('./routes/users');
+const noteRoutes = require('./routes/notes');
+const labelRoutes = require('./routes/labels');
 
 // Routes which should handle requests
 app.use('/user', userRoutes);

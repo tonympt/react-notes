@@ -92,7 +92,7 @@ For my first project, I developed a minimalist *Clone* of [Google Keep](https://
 
 #### Backend
 
-* [Node.js and Express](https://nodejs.org/en) <img src=https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png width="20"> - See [`App.js`](back\app.js)
+* [Node.js and Express](https://nodejs.org/en) <img src=https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png width="20"> - See [`App.js`](back\index.js)
 
 * [Mongoose](https://mongoosejs.com/) <img src=https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png width="20"> - See [`Model`](./back/api/models)
 

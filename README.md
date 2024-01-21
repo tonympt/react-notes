@@ -5,7 +5,7 @@ For my first project, I developed a minimalist *Clone* of [Google Keep](https://
 ## Video Demo
 
 <div align="center">
-<a href="https://www.youtube.com/watch?v=9cDGpNDJ1CY">
+<a href="https://www.youtube.com/watch?v=9cDGpNDJ1CY" target="_blank">
     <img width="50%" src="https://img.youtube.com/vi/9cDGpNDJ1CY/maxresdefault.jpg">
   </a>
 <br/>
@@ -14,17 +14,36 @@ For my first project, I developed a minimalist *Clone* of [Google Keep](https://
 </p>
 </div>
 
+## App Demo
+
+<p align="center">
+  <a href="https://react-notes-tmpt.com/" target="_blank">
+    <button style="background-color: #fbbf24;
+                   border: 2px solid #fff;
+                   border-radius: 5px;
+                   color: white;
+                   padding: 10px 20px;
+                   text-align: center;
+                   text-decoration: none;
+                   font-size: 16px;
+                   font-weight: bold;
+                   margin: 4px 2px;
+                   cursor: pointer;
+                   box-shadow: 0 4px #999;"
+                   >Try it !</button>
+  </a>
+</p>
 
 
 ## Features
 
 * 🔐 **Login**, 🔏 **Register** for creating a new user and ❌**Delete** account
 
-* 🌈 **Colors**, 📐 **Sizes**, ❮❯ **Margins**, ❯❮ **Paddings** etc., matches exactly that of *Google Keep*'s Web App
+* 🌈 **Design**, matches  that of *Google Keep*'s Web App
 
 * 📲 **Responsive Design** -  Adapts to all screen sizes, from mobile screens to desktop.
 
-* 📝 **Notes** - Create, Update, *Copy*, Delete items on the fly
+* 📝 **Notes** - Create, Update, Copy, Delete items on the fly
 
   * 📝 **Simple Notes** - Update/delete text in a simple text mode
 
@@ -54,9 +73,9 @@ For my first project, I developed a minimalist *Clone* of [Google Keep](https://
 
 * 🌚 **Dark Mode** - Dynamically change light/dark theme
 
-* 🔍 **Display modal** - When a user clicks on any of the notes, a modal window opens. This modal is not just a simple pop-up; it comes with a visually scaling animation
+* 🔍 **Display modal** - When a user clicks on any of the notes, a modal window opens. This modal aims to increase the text area of ​​the notes.
 
-* 🔗 **Optimistic approach to restful API queries** - To enhance user experience, instead of displaying a loader while retrieving data from the server, it would be better to adopt an optimistic data mutation approach using the onMutate method of ``react-query``. This method immediately updates the front-end data cache. A comparison is then made with the server-side update to modify the cache in case of an error
+* 🔗 **Optimistic approach to restful API queries** - To enhance user experience, instead of displaying a loader while retrieving data from the server, it would be better to adopt an optimistic data mutation approach using the onMutate method of ``react-query``. This method immediately updates the front-end data cache. A comparison is then made with the server-side update to modify the cache in case of an error.
 
 ## Libraries Used
 
@@ -67,10 +86,10 @@ For my first project, I developed a minimalist *Clone* of [Google Keep](https://
 * [ReactJS](https://fr.react.dev/) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="20"> - See [`Front source`](./front/src)
   - Complete frontend JS framework
 
-* [Typescript](https://www.typescriptlang.org/) <img src="https://guilhermetheodoro.gallerycdn.vsassets.io/extensions/guilhermetheodoro/typescript-indexing/0.0.4/1642797063953/Microsoft.VisualStudio.Services.Icons.Default" width="20"> - See [`Util example`](front\src\utils\transformToPatch.ts) or See [`Type`](front\src\type\userType.ts)
+* [Typescript](https://www.typescriptlang.org/) <img src="https://guilhermetheodoro.gallerycdn.vsassets.io/extensions/guilhermetheodoro/typescript-indexing/0.0.4/1642797063953/Microsoft.VisualStudio.Services.Icons.Default" width="20"> - See [`Util example`](./front/src/utils/transformToPatch.ts) or See [`Type`](./front/src/type/userType.ts)
   - TypeScript is an indispensable, strongly typed programming language that builds on JavaScript, enhancing it with type annotations and advanced features
 
-* [Tailwind css](https://tailwindcss.com/)  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png" width="20">- See [`NavBar example`](front\src\components\NavBar\index.tsx)
+* [Tailwind css](https://tailwindcss.com/)  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png" width="20">- See [`NavBar example`](./front/src/components/NavBar/index.tsx)
 
   - A popular utility-first CSS framework for rapidly building custom user interfaces
 
@@ -79,7 +98,7 @@ For my first project, I developed a minimalist *Clone* of [Google Keep](https://
   - This is a set of reusable components that you can copy and paste into your application. This library focused on accessibility, customization and open source is trendy and has experienced strong growth in 2023
 
 
-* [Reach Router Dom](https://reactrouter.com/en/main) <img src=https://static-00.iconduck.com/assets.00/react-router-icon-512x279-zswz065s.png width="20"> - See [`Router`](front\src\router.tsx)
+* [Reach Router Dom](https://reactrouter.com/en/main) <img src=https://static-00.iconduck.com/assets.00/react-router-icon-512x279-zswz065s.png width="20"> - See [`Router`](./front/src/router.tsx)
 
   - For client-side (browser) routing
 
@@ -92,11 +111,11 @@ For my first project, I developed a minimalist *Clone* of [Google Keep](https://
 
 #### Backend
 
-* [Node.js and Express](https://nodejs.org/en) <img src=https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png width="20"> - See [`App.js`](back\index.js)
+* [Node.js and Express](https://nodejs.org/en) <img src=https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png width="20"> - See [`App.js`](./back/index.js)
 
 * [Mongoose](https://mongoosejs.com/) <img src=https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png width="20"> - See [`Model`](./back/api/models)
 
-* [jsonwebtoken](https://mongoosejs.com/) <img src=https://cdn.worldvectorlogo.com/logos/jwt-3.svg width="20"> - See [`authentification.js`](back\api\middleware\authentification.js)
+* [jsonwebtoken](https://mongoosejs.com/) <img src=https://cdn.worldvectorlogo.com/logos/jwt-3.svg width="20"> - See [`authentification.js`](./back/api/middleware/authentification.js)
 
 
 ## Conception
@@ -120,3 +139,15 @@ The user can **create**, **update**, **delete** note elements, and can also crea
 
 The Backend is a simple RESTfull API built with ``Node.js`` and ``Express``. The router consists of 3 main routes: ``/users``, ``/notes``, and ``/labels``. All routes dedicated to user-specific services are protected by an [authentication middleware](back\api\middleware\authentification.js) that verifies the JWT token. The database is built with three MongoDB documents: **users**, **labels**, and **notes**, and each of these documents is pre-generated by a [mongoose model](back\api\models).
 
+
+## Reflections and Future Improvements
+
+For the deployment of this project, the backend is hosted on an **AWS instance**, and the frontend is deployed on **Vercel**.
+
+This project, which is not intended to attract heavy traffic, was designed with simplicity in mind, particularly for the database component. I opted to utilize a MongoDB Atlas cluster for database management. This technology choice, while straightforward, has its limitations in terms of optimization. Specifically, the free tier shares RAM with other users, which can slow down the performance of my API.
+
+For my future projects, I have outlined the following objectives:
+
+- Implement a **Docker-based** environment to streamline the setup and deployment process.
+
+- Manage my database from scratch to fully optimize my backend.

@@ -29,6 +29,10 @@ const userRoutes = require('./routes/users');
 const noteRoutes = require('./routes/notes');
 const labelRoutes = require('./routes/labels');
 
+app.get('/', (req, res) => {
+	res.send('You are connected to the react notes tmpt API 🔗 !!!');
+});
+
 // Routes which should handle requests
 app.use('/user', userRoutes);
 app.use('/notes', noteRoutes);

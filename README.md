@@ -18,19 +18,7 @@ For my first project, I developed a minimalist *Clone* of [Google Keep](https://
 
 <p align="center">
   <a href="https://react-notes-tmpt.com/" target="_blank">
-    <button style="background-color: #fbbf24;
-                   border: 2px solid #fff;
-                   border-radius: 5px;
-                   color: white;
-                   padding: 10px 20px;
-                   text-align: center;
-                   text-decoration: none;
-                   font-size: 16px;
-                   font-weight: bold;
-                   margin: 4px 2px;
-                   cursor: pointer;
-                   box-shadow: 0 4px #999;"
-                   >Try it !</button>
+   <img src='./docs/button.png'>
   </a>
 </p>
 
@@ -111,7 +99,7 @@ For my first project, I developed a minimalist *Clone* of [Google Keep](https://
 
 #### Backend
 
-* [Node.js and Express](https://nodejs.org/en) <img src=https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png width="20"> - See [`App.js`](./back/index.js)
+* [Node.js and Express](https://nodejs.org/en) <img src=https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png width="20"> - See [`App.js`](./back/api/index.js)
 
 * [Mongoose](https://mongoosejs.com/) <img src=https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png width="20"> - See [`Model`](./back/api/models)
 
